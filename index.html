@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahmudul Hassan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="mee.jpg" />
+  </head>
+
+  <body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="bg-transparent top-0 left-0 w-full z-50">
+      <div
+        class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16"
+      >
+        <!-- My Name -->
+        <h1 class="text-[25px] font-bold">
+          Mahmudul <span class="text-red-500">Hassan</span>
+        </h1>
+
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex gap-8 text-lg font-medium">
+          <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+          <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+          <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+          <li><a href="#about" class="hover:text-blue-400">About Me</a></li>
+          <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        </ul>
+
+        <button id="btn" class="md:hidden text-3xl">☰</button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div
+        id="mobile"
+        class="hidden absolute md:hidden bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white flex w-full flex-col items-center text-lg font-medium space-y-4 py-6"
+      >
+        <a href="#home" class="hover:text-blue-400 transition">Home</a>
+        <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+        <a href="#about" class="hover:text-blue-400 transition">About Me</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div
+      id="home"
+      class="flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-16 gap-10"
+    >
+      <div class="text-center md:text-left space-y-5">
+        <h1 class="text-4xl md:text-6xl text-red-500 bg-clip-text font-bold">
+          Hi, I'm <span class="text-white">Mahmudul Hassan</span>
+        </h1>
+        <h2 class="text-xl md:text-2xl text-gray-250 font-semibold">
+          Front-End Developer | Web Designer
+        </h2>
+        <p class="text-gray-400 max-w-md mx-auto md:mx-0 leading-relaxed">
+          Passionate about crafting modern, responsive, and visually stunning
+          web applications. I love bringing creative ideas to life using clean
+          code and smooth user experiences.
+        </p>
+        <div class="flex justify-center md:justify-start gap-4 pt-4">
+          <a
+            href="#projects"
+            class="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-lg text-white font-medium transition"
+          >
+            View Projects
+          </a>
+          <a
+            href="#contact"
+            class="border-blue-400 hover:bg-blue-400 hover:text-black px-6 py-2 rounded-lg font-medium transition"
+          >
+            Contact Me
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-center md:justify-end w-full md:w-1/2">
+        <img
+          src="profile.jpg"
+          alt="Mahmudul Hassan"
+          class="w-64 h-64 md:w-96 md:h-96 object-cover rounded-full"
+        />
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="mt-[153px] py-2 bg-gradient-to-br from-gray-800 via-black to-gray-800"
+    >
+      <h1 class="text-[25px] font-bold text-center pt-2 pb-7">My Projects</h1>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-5 w-auto h-auto p-5">
+        <div
+          class="max-w-sm mx-auto bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white rounded-2xl shadow-xl p-6 text-center"
+        >
+          <img
+            src="project1.jpg"
+            alt="Profile photo"
+            class="h-72 w-72 object-cover rounded-xl mx-auto border-4 border-red-500"
+          />
+          <h1 class="text-2xl font-semibold mt-5">Welcome</h1>
+          <p class="text-gray-300 mt-3 leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            consectetur.
+          </p>
+          <button
+            class="bg-red-500 hover:bg-blue-600 text-white font-medium px-6 py-2 mt-5 rounded-full"
+          >
+            Get Started
+          </button>
+        </div>
+
+        <div
+          class="max-w-sm mx-auto bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white rounded-2xl shadow-xl p-6 text-center"
+        >
+          <img
+            src="project2.jpg"
+            alt="Profile photo"
+            class="h-72 w-72 object-cover rounded-xl mx-auto border-4 border-red-500"
+          />
+          <h1 class="text-2xl font-semibold mt-5">Welcome</h1>
+          <p class="text-gray-300 mt-3 leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            consectetur.
+          </p>
+          <button
+            class="bg-red-500 hover:bg-blue-600 text-white font-medium px-6 py-2 mt-5 rounded-full"
+          >
+            Get Started
+          </button>
+        </div>
+
+        <div
+          class="max-w-sm mx-auto bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white rounded-2xl shadow-xl p-6 text-center"
+        >
+          <img
+            src="project3.jpg"
+            alt="Profile photo"
+            class="h-72 w-72 object-cover rounded-xl mx-auto border-4 border-red-500"
+          />
+          <h1 class="text-2xl font-semibold mt-5">Welcome</h1>
+          <p class="text-gray-300 mt-3 leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            consectetur.
+          </p>
+          <button
+            class="bg-red-500 hover:bg-blue-600 text-white font-medium px-6 py-2 mt-5 rounded-full"
+          >
+            Get Started
+          </button>
+        </div>
+
+        <div
+          class="max-w-sm mx-auto bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white rounded-2xl shadow-xl p-6 text-center"
+        >
+          <img
+            src="project4.jpg"
+            alt="Profile photo"
+            class="h-72 w-72 object-cover rounded-xl mx-auto border-4 border-red-500"
+          />
+          <h1 class="text-2xl font-semibold mt-5">Welcome</h1>
+          <p class="text-gray-300 mt-3 leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            consectetur.
+          </p>
+          <button
+            class="bg-red-500 hover:bg-blue-600 text-white font-medium px-6 py-2 mt-5 rounded-full"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="skills"
+      class="py-20 bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white"
+    >
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">
+          My <span class="text-red-500">Skills</span>
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="bg-gray-800 p-6 rounded-2xl">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="w-12 mx-auto mb-3"
+            />
+            <h3 class="font-semibold text-lg">HTML</h3>
+            <p class="text-gray-400 text-sm mt-1">
+              Building structure of web pages
+            </p>
+          </div>
+
+          <div class="bg-gray-800 p-6 rounded-2xl">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="w-12 mx-auto mb-3"
+            />
+            <h3 class="font-semibold text-lg">CSS</h3>
+            <p class="text-gray-400 text-sm mt-1">Styling and layout design</p>
+          </div>
+
+          <div class="bg-gray-800 p-6 rounded-2xl">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="w-12 mx-auto mb-3"
+            />
+            <h3 class="font-semibold text-lg">JavaScript</h3>
+            <p class="text-gray-400 text-sm mt-1">
+              Dynamic and interactive behavior
+            </p>
+          </div>
+
+          <div class="bg-gray-800 p-6 rounded-2xl">
+            <img src="Tailwind CSS.svg" class="w-12 mx-auto mb-3" />
+            <h3 class="font-semibold text-lg">Tailwind CSS</h3>
+            <p class="text-gray-400 text-sm mt-1">Fast modern UI design</p>
+          </div>
+
+          <div class="bg-gray-800 p-6 rounded-2xl">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              class="w-12 mx-auto mb-3"
+            />
+            <h3 class="font-semibold text-lg">Node.js</h3>
+            <p class="text-gray-400 text-sm mt-1">Backend server development</p>
+          </div>
+
+          <div class="bg-gray-800 p-6 rounded-2xl">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              class="w-12 mx-auto mb-3"
+            />
+            <h3 class="font-semibold text-lg">React</h3>
+            <p class="text-gray-400 text-sm mt-1">
+              Component-based UI building
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="max-w-5xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10"
+    >
+      <div
+        class="w-40 h-40 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-blue-500"
+      >
+        <img
+          src="profile.jpg"
+          alt="Mahmudul's Photo"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <div>
+        <h2 class="text-4xl font-bold mb-4 text-blue-400">About Me</h2>
+        <p class="text-lg mb-4 text-gray-300">
+          Hi, I'm <span class="font-semibold text-white">Mahmudul</span> — a
+          dedicated and curious
+          <span class="text-blue-400">Web Developer</span> who enjoys crafting
+          clean, responsive, and modern websites.
+        </p>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold text-blue-300 mb-2">
+            🎓 Education
+          </h3>
+          <ul class="space-y-2 text-gray-300">
+            <li>
+              <span class="font-medium text-white"
+                >Bachelor of Computer Applications</span
+              >
+              — Mangaldai College (2023 - 2026)
+            </li>
+            <li>
+              <span class="font-medium text-white">Higher Secondary</span> —
+              Bechimari senior secondary school (2021 - 2023)
+            </li>
+            <li>
+              <span class="font-medium text-white">Secondary School</span> —
+              Bechimari Jatiya Vidyalaya (Passed: 2021)
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-2xl font-semibold text-blue-300 mb-2">
+            💻 Languages & Skills
+          </h3>
+          <p class="text-gray-300">
+            During my school and university years, I learned and practiced:
+          </p>
+          <div class="flex flex-wrap gap-2 mt-3">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+              >HTML</span
+            >
+            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+              >CSS</span
+            >
+            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+              >JavaScript</span
+            >
+            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+              >Tailwind CSS</span
+            >
+            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+              >C</span
+            >
+            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+              >C++</span
+            >
+            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+              >Python</span
+            >
+            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+              >AI/ML</span
+            >
+            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+              >OOP</span
+            >
+            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+              >Java</span
+            >
+          </div>
+        </div>
+
+        <p class="text-gray-400">
+          I'm always eager to learn new technologies, explore creative ideas,
+          and improve both my design and coding skills.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="w-full sm:w-[60%] m-auto p-4">
+      <h1 class="text-4xl font-bold text-center">
+        Contact <span class="text-red-500">Me</span>
+      </h1>
+
+      <form action="" class="flex flex-col gap-2 py-5">
+        <label for="name" class="text-lg">Name</label>
+        <input
+          type="text"
+          class="bg-zinc-800 px-4 py-3 rounded-lg"
+          placeholder="Enter your name"
+        />
+        <label for="email" class="text-lg">Email</label>
+        <input
+          type="email"
+          class="bg-zinc-800 px-4 py-3 rounded-lg"
+          placeholder="Enter your email"
+        />
+        <label for="email" class="text-lg">Phone</label>
+        <input
+          type="tel"
+          class="bg-zinc-800 px-4 py-3 rounded-lg"
+          placeholder="Enter your phone"
+        />
+        <label for="message" class="text-lg">Message</label>
+        <textarea
+          type="tel"
+          class="bg-zinc-800 px-4 py-3 rounded-lg h-[150px]"
+          placeholder="Enter your message"
+        ></textarea>
+
+        <button
+          class="text-white px-4 w-full sm:w-[150px] ms-auto mt-3 py-3 rounded-lg bg-red-500"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <!-- icons -->
+    <section
+      id="contact"
+      class="flex flex-cols w-full justify-center gap-5 sm:w-[60%] m-auto p-4"
+    >
+      <a href="#"
+        ><img
+          src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000"
+          alt="Facebook"
+          srcset=""
+          class="h-[50px] w-[50px]"
+      /></a>
+
+      <a href="#"
+        ><img
+          src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000"
+          alt="Instagram"
+          srcset=""
+          class="h-[50px] w-[50px]"
+      /></a>
+
+      <a href="#"
+        ><img
+          src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000"
+          alt="Linkedin"
+          srcset=""
+          class="h-[50px] w-[50px]"
+      /></a>
+
+      <a href="#"
+        ><img
+          src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000"
+          alt="Whatsapp"
+          srcset=""
+          class="h-[50px] w-[50px]"
+      /></a>
+
+      <a href="#"
+        ><img
+          src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000"
+          alt=""
+          srcset=""
+          class="h-[50px] w-[50px]"
+      /></a>
+    </section>
+
+    <script>
+      // Mobile menu toggle
+      const btn = document.getElementById("btn");
+      const mobile = document.getElementById("mobile");
+
+      btn.addEventListener("click", () => {
+        mobile.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
